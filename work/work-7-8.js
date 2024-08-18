@@ -29,3 +29,4 @@ function canBay(productPrice, age, money, hasJob = false){
 }
 
 console.log(canBay(2000, 25, 1000));
+
