@@ -27,6 +27,14 @@ function loadData() {
 	}
 }
 
+/*work with days */
+function addDays(event){
+	event.preventDefault();
+	console.log (event);
+	const data = new FormData(event.target);
+	console.log (data.get("comment"));
+}
+
 function saveData() {
 	localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits));
 }
