@@ -201,6 +201,10 @@ input::placeholder{
     line-height: 16px;
 }
 
+input.error{
+    border: 1px solid red;
+}
+
 .habbit__form{
     display: flex;
     gap: 15px;
