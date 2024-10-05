@@ -29,18 +29,18 @@ function loadData() {
 }
 
 /*work with days */
-function addDays(event){
+function addDays(event) {
 	const form = event.target;
 	event.preventDefault();
 	const data = new FormData(form);
 	const comment = data.get("comment");
 	form['comment'].classList.remove('error');
-	if (!comment){
+	if (!comment) {
 		form['comment'].classList.add('error');
 	};
 	habbits = habbits.map(habbit => {
-		if (habbit.id === globalActiveHabbitId){
-			return{
+		if (habbit.id === globalActiveHabbitId) {
+			return {
 				...habbit,
 				days: habbit.days.concat([{ comment }])
 			}
@@ -57,16 +57,16 @@ function saveData() {
 	localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits));
 }
 
-function deleteDay(index){
-	habbits = habbits.map(habbit =>{
-		if (habbit.id === globalActiveHabbitId){
+function deleteDay(index) {
+	habbits = habbits.map(habbit => {
+		if (habbit.id === globalActiveHabbitId) {
 			habbit.days.splice(index, 1);
-			return{
+			return {
 				...habbit,
 				days: habbit.days
 			}
 		}
-		return habbit;		
+		return habbit;
 	})
 	rerender(globalActiveHabbitId);
 	saveData();
@@ -111,7 +111,7 @@ function rerenderContent(activeHabbit) {
 	page.content.daysContainer.innerHTML = "";
 	for (const index in activeHabbit.days) {
 		const element = document.createElement('div');
-		element.classList.add('habbit'); 
+		element.classList.add('habbit');
 		element.innerHTML = `<div class='habbit__day'>День ${Number(index) + 1}</div>
 		<div class='habbit__comment'> ${activeHabbit.days[index].comment}</div>
 		<button class='habbit__delete' onclick = "deleteDay(${index})">
@@ -119,7 +119,7 @@ function rerenderContent(activeHabbit) {
 		</button>`;
 		page.content.daysContainer.appendChild(element);
 	}
-page.content.nextDay.innerHTML = `День ${activeHabbit.days.length + 1}`
+	page.content.nextDay.innerHTML = `День ${activeHabbit.days.length + 1}`
 }
 
 function rerender(activeHabbitId) {

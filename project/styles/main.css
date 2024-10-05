@@ -1,8 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
     background-color: #F3F6FD;
@@ -10,35 +10,35 @@ body{
 }
 
 .app {
-    display: flex; 
+    display: flex;
     gap: 50px;
 }
 
-.logo{
-    margin-bottom: 50px ;
+.logo {
+    margin-bottom: 50px;
 }
 
-.panel{
+.panel {
     background-color: white;
     min-height: 100vh;
     padding: 30px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    
+
 }
 
-.menu__item{
+.menu__item {
     border-radius: 14px;
     box-shadow: 0px 8px 14px 0px rgba(62, 107, 224, 0.12);
     background: none;
@@ -48,24 +48,24 @@ body{
     cursor: pointer;
 }
 
-.menu__item:hover{
+.menu__item:hover {
     background: rgb(106, 106, 251);
 }
 
 
-.menu__item:hover img{
+.menu__item:hover img {
     filter: brightness(0) invert(1);
 }
 
-.menu__item_active{
+.menu__item_active {
     background: rgb(80, 81, 249);
 }
 
-.menu__item_active img{
+.menu__item_active img {
     filter: brightness(0) invert(1);
 }
 
-.menu__add{
+.menu__add {
     box-sizing: border-box;
     border: 1px solid rgb(202, 213, 255);
     border-radius: 14px;
@@ -75,41 +75,41 @@ body{
     cursor: pointer;
 }
 
-.menu__add:hover{
+.menu__add:hover {
     background-color: #E7E2FE;
 }
 
-.content{
+.content {
     min-width: 900px;
     padding: 45px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 30px;
     line-height: 33px;
     color: black;
 }
 
-.progress{
+.progress {
     display: flex;
     flex-direction: column;
     gap: 12px;
     min-width: 235px;
 }
 
-.progress__text{
+.progress__text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.progress__name{
+.progress__name {
     color: rgb(35, 35, 96);
     font-size: 14px;
     line-height: 16px;
@@ -117,13 +117,13 @@ h1{
     font-weight: 800;
 }
 
-.progress__percernt{
+.progress__percernt {
     color: rgb(118, 131, 150);
     font-size: 12px;
     line-height: 13px;
 }
 
-.progress__bar{
+.progress__bar {
     width: 100%;
     height: 5px;
     border-radius: 4px;
@@ -131,7 +131,7 @@ h1{
     position: relative;
 }
 
-.progress__cover-bar{
+.progress__cover-bar {
     position: absolute;
     height: 5px;
     border-radius: 4px;
@@ -139,11 +139,11 @@ h1{
     transition: all 0.5s;
 }
 
-main{
+main {
     margin-top: 30px;
 }
 
-.habbit{
+.habbit {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -152,7 +152,7 @@ main{
     margin-bottom: 12px;
 }
 
-.habbit__day{
+.habbit__day {
     background-color: #FBFAFF;
     border-radius: 10px 0 0 10px;
     border-right: 1px solid rgb(231, 235, 251);
@@ -161,9 +161,9 @@ main{
     line-height: 16px;
     padding: 20px 40px;
     min-width: 150px;
-    }
+}
 
-.habbit__comment{
+.habbit__comment {
     color: rgb(35, 35, 95);
     font-size: 16px;
     font-weight: 500;
@@ -171,7 +171,7 @@ main{
     padding: 20px 25px;
 }
 
-.habbit__delete{
+.habbit__delete {
     margin-left: auto;
     margin-right: 10px;
     background: none;
@@ -181,11 +181,11 @@ main{
     padding: 5px;
 }
 
-.habbit__delete:hover{
+.habbit__delete:hover {
     background-color: #E7E2FE;
 }
 
-input{
+input {
     border: 1px solid rgb(231, 235, 251);
     border-radius: 9px;
     background: rgb(255, 255, 255);
@@ -195,17 +195,17 @@ input{
     line-height: 16px;
 }
 
-input::placeholder{
+input::placeholder {
     color: rgb(136, 153, 168);
     font-size: 14px;
     line-height: 16px;
 }
 
-input.error{
+input.error {
     border: 1px solid red;
 }
 
-.habbit__form{
+.habbit__form {
     display: flex;
     gap: 15px;
     width: 100%;
@@ -213,17 +213,17 @@ input.error{
     position: relative;
 }
 
-.input__icon{
+.input__icon {
     position: absolute;
     top: 10px;
     left: 45px;
 }
 
-.input_icon{
+.input_icon {
     padding-left: 45px;
 }
 
-.button{
+.button {
     border-radius: 9px;
     background: rgb(237, 236, 254);
     border: none;
@@ -235,6 +235,6 @@ input.error{
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background: rgb(210, 208, 245);
 }
