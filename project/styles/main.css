@@ -251,9 +251,9 @@ input.error {
     justify-content: center;
 }
 
-/* .cover__hidden{
+.cover__hidden{
     display: none;
-} */
+}
 
 .popup{
     border-radius: 10px;

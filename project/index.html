@@ -17,7 +17,7 @@
             <img class="logo" src="./images/logo.svg" alt="Логотип Habbit app">
             <nav class="menu">
                 <div class="menu__list"></div>
-                <button class="menu__add">
+                <button class="menu__add" onclick="togglePopup()">
                     <img src="./images/add.svg" alt="Добавить привычку">
                 </button>
             </nav>
@@ -47,27 +47,28 @@
                 </div>
             </main>
         </div>
-        <div class="cover cover__hidden">
+        <div class="cover cover__hidden" id="add-habbit-popup">
             <div class="popup"> 
                 <h2>Новая привычка</h2>
                 <div class="icon-lable">Иконка</div>
                 <div class="icon-select">
-                    <button class="icon icon_active">
+                    <button class="icon icon_active" onclick="setIcon(this, 'sport')">
                         <img src="./images/sport.svg" alt="Спорт">
                     </button>
-                    <button class="icon">
+                    <button class="icon" onclick="setIcon(this,'water')">
                         <img src="./images/water.svg" alt="Вода">
                     </button>
-                    <button class="icon">
+                    <button class="icon" onclick="setIcon(this,'food')">
                         <img src="./images/food.svg" alt="Еда">
                     </button>
                 </div>
                 <form class="popup__form">
                     <input type="text" name="name" placeholder="Название">
+                    <input type="text" name="icon" hidden placeholder="Иконка" value="sport">
                     <input type="number" name="target" placeholder="Цель">
                 </form>
                 <button class="button" type="submit">Добавить</button>
-                <button class="popup__close">
+                <button class="popup__close" onclick="togglePopup()">
                     <img src="./images/close.svg" alt="Закрыть форму">
                 </button>
             </div>
